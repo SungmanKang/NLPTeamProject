@@ -12,6 +12,7 @@ NLPTeamProject
   - To run this file, installed the evaluate : !pip install evaluate
 3. test run_glue
   - Even if I changed the train_file, there is no difference as before.
+  - Change the epoch and try to use other parameters.
 4. Test Using sst2.ipynb
   - Try to make the code for the evaluation, but it still doesn't work.
   - Need to think about the input type of the data.
