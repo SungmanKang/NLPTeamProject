@@ -5,6 +5,8 @@ PAPER : https://arxiv.org/abs/1910.07181
 
 BERTRAM : https://github.com/timoschick/bertram
 
+Huggingface : https://huggingface.co/rcorkill
+
 11/23/2022
 1. Download SST-2 dataset for testing.
   - https://gluebenchmark.com/tasks/
