@@ -14,5 +14,5 @@ dependencies:
   - gensim=3.8
   - jsonpickle=1.2
   - pip:
-      - transformers==2.1
+      - transformers==4.24
       - visdom==0.1.8.9
