@@ -36,3 +36,9 @@ Huggingface : https://huggingface.co/rcorkill
 5. Test.ipynb
   - Based on the https://github.com/timoschick/bertram -> examples
   - Make the test code, but I think it looks like predicting word.
+
+
+PREPROCESSING DATA:
+- This only needs to be done once for your corpus, and constructs training buckets to be used when pre-traning any instances of BERTRAM
+run: Python3 fcm/preprocess.py train --input ./fcm/brown/brown.txt --output ./training
+-input is the path of your text corpus (in our example, brown) and --ouput directs to your training directory, where the training buckets will be saved
