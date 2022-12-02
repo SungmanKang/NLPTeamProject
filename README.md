@@ -1,6 +1,8 @@
 # NLPTeamProject
 NLPTeamProject
 
+![Poster_final](https://user-images.githubusercontent.com/78437222/205385635-fdd17770-69cc-49cc-aed1-0f79537268b3.png)
+
 PAPERS:
 
 DeBERTa - https://arxiv.org/abs/2006.03654
