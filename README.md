@@ -1,11 +1,22 @@
 # NLPTeamProject
 NLPTeamProject
 
-PAPER : https://arxiv.org/abs/1910.07181
+PAPERS:
 
+DeBERTa - https://arxiv.org/abs/2006.03654
+BERTRAM - https://arxiv.org/abs/1910.07181
+
+
+GitHub Repositories (much of the source code used in DeBERTRAMa is modified from these repositories, with changes made to account for new word embeddings, DeBERTa's architcture, and syntax changes in the modern Transformers library on HuggingFace):
+
+DeBERTa: https://github.com/microsoft/DeBERTa
 BERTRAM : https://github.com/timoschick/bertram
 
+
+HuggingFace Model Repositories (the models created for this project are currently hosted on HuggingFace, and can be accessed directly through their website, or interected with via the Transfomers library):
+
 Huggingface : https://huggingface.co/rcorkill
+
 
 11/23/2022
 1. Download SST-2 dataset for testing.
