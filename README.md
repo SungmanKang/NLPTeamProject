@@ -17,6 +17,20 @@ HuggingFace Model Repositories (the models created for this project are currentl
 
 Huggingface : https://huggingface.co/rcorkill
 
+## Procedure for pretraining and implementing DeBERTRAMa
+1. preprocess data from your selected corpus
+- See preprocessing data section below
+2. pretrain a BERTRAM instance for your specific architecture (e.g., DeBERTa)
+- See pretraining BERTRAM instance section below
+- Ensure that a word embedding file is downloaded and placed in fcm/wordEmbeddings
+3. Inject words with context into your desired architecture (e.g., DeBERTa) using the pretrained (fused) BERTRAM instance
+- This is outlined in, and can be run from, the pretrain_BERTRAM_[model] Jupyter notebooks. These notebooks detail the code used to:
+> > Create a dictionary of words with contexts from the training buckets
+> > Inject the dictionary into the model
+> > fine-tune the model on SST-2 tasks, and evaluate their performance
+
+
+
 
 11/23/2022
 1. Download SST-2 dataset for testing.
