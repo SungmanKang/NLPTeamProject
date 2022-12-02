@@ -50,9 +50,9 @@ Information: for each instance of BERTRAM that deals with a separate model archi
 Each of these processes is shown in a jupyter notebook, however this can also be perforemed via command line. Note: pre-training these instances can be time-intensive, in part due to the uploading of the word embedding file used. In this case, GLoVE.6B.300d is used, but the user can download and use any pre-trained word embedding they see fit.
 
 ## KEY
-"ITEM 1": the name of the architecture the BERTRAM instance is being trained for. Originally, this contained the options 'bert' and 'roberta'. Our project has modified the BERTRAM source code to include 'deberta' as an option. NOTE: needs to be lowercase and in quotes ''
-"ITEM 2": the pre-trained model path that the BERTRAM instance is being trained for. Specifically, this is a HuggingFace path, and the options are 'bert-base-uncased', 'roberta-base', and 'microsoft/deberta-base'
-"ITEM 3": the name of the word embedding file used to pre-train BERTRAM.
+* "ITEM 1": the name of the architecture the BERTRAM instance is being trained for. Originally, this contained the options 'bert' and 'roberta'. Our project has modified the BERTRAM source code to include 'deberta' as an option. NOTE: needs to be lowercase and in quotes ''
+* "ITEM 2": the pre-trained model path that the BERTRAM instance is being trained for. Specifically, this is a HuggingFace path, and the options are 'bert-base-uncased', 'roberta-base', and 'microsoft/deberta-base'
+* "ITEM 3": the name of the word embedding file used to pre-train BERTRAM.
 
 ## Training  form-only BERTRAM instances:
 Python3 train.py --model_cls '[ITEM 1]' --bert_model '[ITEM2]' --output_dir ./outputs/FORM_DIR --train_dir ./training/ --vocab ./training/train.vwc100 --emb_file ./fcm/wordEmbeddings/[ITEM3] --num_train_epochs 20 --emb_dim 768 --train_batch_size 64 --smin 1 --smax 1 --max_seq_length 96 --mode 'form' --learning_rate 0.01 --dropout 0.1
